@@ -4,6 +4,7 @@
 
 	주소 뒤에 /?q=파라메터
 */
+
 import React from "react";
 import { useEffect, useState } from "react";
 import ProductCard from "../components/ProductCard";
@@ -19,6 +20,7 @@ const ProductAll = () => {
 		let keyword = query.get("q") || "";
 		//쿼리값을 읽어 온다,q의 밸류(아이템을 가져온다) / 없을땐 빈 스트링
 		let url = `https://my-json-server.typicode.com/hyenish/H-M/products?q=${keyword}`;
+
 		//
 		let response = await fetch(url);
 		let data = await response.json();

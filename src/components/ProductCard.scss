@@ -24,7 +24,7 @@
 				padding: 4px 15px 4px 8px;
 			}
 			.new {
-				background: var(--color-point);
+				background: var(--color-red);
 				position: absolute;
 				right: 0;
 				bottom: 50px;
@@ -45,7 +45,8 @@
 	}
 
 	.price {
-		color: var(--color-point);
-		font-size: 0.8rem;
+		color: var(--color-blue);
+		font-size: 0.9rem;
+		font-weight: bold;
 	}
 }

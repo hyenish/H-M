@@ -1,5 +1,7 @@
 $trigger1: "(max-width: 991px)";
 $trigger2: "(max-width: 767px)";
+$logoM: "(max-width: 600px)";
+$logoS: "(max-width: 400px)";
 
 .hide {
 	visibility: hidden;
@@ -34,6 +36,12 @@ h1 {
 	padding: 20px 0 40px;
 	.img_wrap {
 		cursor: pointer;
+	}
+	@media #{$logoM} {
+		transform: scale(0.7);
+	}
+	@media #{$logoS} {
+		transform: scale(0.4);
 	}
 }
 
@@ -79,7 +87,8 @@ nav {
 	top: 0;
 	left: 0;
 	padding-top: 60px;
-	background-color: #dddddd;
+	background-color: #eeeeee;
+	box-shadow: 0 0 5px #888;
 	z-index: 100;
 	transform: 0.5s ease-in;
 
@@ -101,7 +110,7 @@ nav {
 			font-size: 1.2rem;
 
 			&:hover {
-				color: var(--color-point);
+				color: var(--color-red);
 			}
 		}
 	}
