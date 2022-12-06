@@ -9,15 +9,15 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
 	const [sideState, setSideState] = useState("-100%");
 	const navigate = useNavigate();
 	const menuList = [
-		"여성",
-		"Divided",
-		"남성",
-		"신생아/유아",
-		"아동",
-		"H&M HOME",
-		"스포츠",
-		"Sale",
-		"지속가능성",
+		"WOMEN",
+		"MEN",
+		"LUXURY",
+		"BAG&SHOES",
+		"LIFE",
+		"OUTLET",
+		"What's New",
+		"Trend NOW",
+		"SALE",
 	];
 
 	const search = (event) => {
@@ -75,7 +75,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
 			<h1>
 				<Link to="/">
 					<div className="img_wrap">
-						<img width={90} src="/img/HM-Logo.png" alt="H&M" />
+						<img width={300} src="/img/logo.svg" alt="메종키츠네" />
 					</div>
 				</Link>
 			</h1>

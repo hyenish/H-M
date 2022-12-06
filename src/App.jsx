@@ -1,5 +1,3 @@
-//nav에 authenticate, setAuthenticate 전달해줘서 로그인, 아웃이 표시되게
-
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.scss";
